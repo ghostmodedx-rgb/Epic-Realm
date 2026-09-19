@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Epic Realm - Ultimate Gaming Community</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Inter, sans-serif; }
+    body { background-color: #0b0f19; color: #f8fafc; line-height: 1.6; }
+
+    /* Navigation Bar */
+    nav {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 20px 8%; background: rgba(15, 23, 42, 0.9);
+      position: sticky; top: 0; z-index: 100; backdrop-filter: blur(10px);
+      border-bottom: 1px solid #1e293b;
+    }
+    .logo { font-size: 1.6rem; font-weight: 800; color: #38bdf8; letter-spacing: 1px; }
+    .nav-links { display: flex; gap: 20px; align-items: center; list-style: none; }
+    .nav-links a { color: #94a3b8; text-decoration: none; font-weight: 600; transition: 0.3s; }
+    .nav-links a:hover { color: #38bdf8; }
+
+    /* Buttons */
+    .btn {
+      padding: 10px 22px; font-size: 0.95rem; font-weight: 700;
+      border-radius: 8px; text-decoration: none; cursor: pointer;
+      border: none; transition: 0.3s; display: inline-block;
+    }
+    .btn-discord { background: #5865f2; color: #fff; }
+    .btn-login { background: #22c55e; color: #fff; }
+    .btn:hover { opacity: 0.85; transform: translateY(-2px); }
+
+    /* Hero Section */
+    .hero {
+      padding: 100px 20px; text-align: center;
+      background: radial-gradient(circle at center, #1e1b4b 0%, #0b0f19 100%);
+    }
+    .hero h1 { font-size: 3.5rem; margin-bottom: 15px; color: #f1f5f9; font-weight: 800; }
+    .hero h1 span { color: #38bdf8; }
+    .hero p { font-size: 1.25rem; color: #94a3b8; max-width: 600px; margin: 0 auto 30px; }
+    .hero-btns { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; }
+
+    /* Sections Container */
+    .container { max-width: 1100px; margin: 0 auto; padding: 60px 20px; }
+    .section-title { font-size: 2rem; color: #38bdf8; margin-bottom: 30px; text-align: center; }
+
+    /* Features Grid */
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+    .card {
+      background: #1e293b; border: 1px solid #334155; padding: 30px;
+      border-radius: 12px; transition: 0.3s;
+    }
+    .card:hover { border-color: #38bdf8; transform: translateY(-4px); }
+    .card h3 { color: #f8fafc; margin-bottom: 10px; font-size: 1.3rem; }
+    .card p { color: #94a3b8; font-size: 0.95rem; }
+
+    /* Locked Teaser Box */
+    .locked-box {
+      background: #111827; border: 2px dashed #334155; text-align: center;
+      padding: 40px 20px; border-radius: 12px; margin-top: 40px;
+    }
+
+    /* Rules Section */
+    .rules-list { list-style: none; max-width: 800px; margin: 0 auto; }
+    .rules-list li {
+      background: #1e293b; margin-bottom: 12px; padding: 15px 20px;
+      border-radius: 8px; border-left: 4px solid #38bdf8; color: #cbd5e1;
+    }
+
+    /* Footer */
+    footer {
+      background: #090d16; border-top: 1px solid #1e293b;
+      padding: 30px 20px; text-align: center; color: #64748b; font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">EPICREALM</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#rules">Rules</a></li>
+      <li><a href="https://discord.gg" target="_blank" class="btn btn-discord">Join Discord</a></li>
+      <li><a href="#" class="btn btn-login">Login</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="home">
+    <h1>Welcome to <span>Epic Realm</span></h1>
+    <p>Join an epic community of gamers, participate in tournaments, and play on our custom game servers.</p>
+    <div class="hero-btns">
+      <a href="https://discord.gg" target="_blank" class="btn btn-discord">Join Discord Server</a>
+      <a href="#" class="btn btn-login">Member Login</a>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <div class="container">
+
+    <!-- ABOUT SECTION -->
+    <section id="about" style="margin-bottom: 60px;">
+      <h2 class="section-title">What We Offer</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>🎮 Active Community</h3>
+          <p>Connect with passionate gamers across multiple titles like Minecraft, GTA RP, Valorant, and more.</p>
+        </div>
+        <div class="card">
+          <h3>🏆 Tournaments & Events</h3>
+          <p>Participate in weekly game nights, competitive leagues, and win community rewards.</p>
+        </div>
+        <div class="card">
+          <h3>⚡ Dedicated Game Servers</h3>
+          <p>Experience low-latency, high-performance community servers with custom mods and plugins.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEASER FOR GAME SERVERS (Dashboard Preview) -->
+    <section style="margin-bottom: 60px;">
+      <h2 class="section-title">Game Servers</h2>
+      <div class="locked-box">
+        <h3 style="font-size: 1.5rem; color: #f8fafc; margin-bottom: 10px;">🔒 Member Access Only</h3>
+        <p style="color: #94a3b8;">Game Server IPs, live status, and player tools will be available in your Dashboard after Login.</p>
+      </div>
+    </section>
+
+    <!-- COMMUNITY RULES -->
+    <section id="rules">
+      <h2 class="section-title">Community Rules</h2>
+      <ul class="rules-list">
+        <li><b>1. Respect Everyone:</b> No toxic behavior, hate speech, or harassment in Discord or in-game.</li>
+        <li><b>2. Fair Play:</b> Cheating, hacking, or abusing exploits will lead to an immediate permanent ban.</li>
+        <li><b>3. No Spam:</b> Avoid unnecessary self-promotion, spamming channels, or mic ear-rape.</li>
+        <li><b>4. Follow Staff:</b> Respect moderators and server admins; their decisions are final.</li>
+      </ul>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 epicrealm.run.place | All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
